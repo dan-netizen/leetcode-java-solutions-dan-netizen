@@ -5,13 +5,13 @@ Constraints:
 1 <= num <= 3999
 
 ###
-Runtime: 6 ms, faster than 39.78% of Java online submissions for Integer to Roman.
-Memory Usage: 38.4 MB, less than 69.34% of Java online submissions for Integer to Roman.
+Runtime: 6 ms, faster than 40.24% of Java online submissions for Integer to Roman.
+Memory Usage: 38.9 MB, less than 37.46% of Java online submissions for Integer to Roman.
 */
 
 class integerToRoman {
     public String intToRoman(int num) {
-        StringBuffer s = new StringBuffer();
+        StringBuilder s = new StringBuilder();
         int[] arr = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         HashMap<Integer, String> map= new HashMap<Integer, String>();
         map.put(1000, "M");
